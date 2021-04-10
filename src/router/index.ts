@@ -16,9 +16,14 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
     },
     {
-        path: '/customRef',
-        name: 'CustomRef',
-        component: () => import('../views/CustomRef.vue')
+        path: '/custom-ref',
+        name: 'custom-ref',
+        component: () => import( /* webpackChunkName: "customRef" */ '../views/CustomRef.vue')
+    },
+    {
+        path: '/table-select-demo',
+        name: 'table-select-demo',
+        component: () => import( /* webpackChunkName: "tableSelectDemo" */ '../views/table-select-demo.vue')
     },
 
 ]

@@ -1,4 +1,4 @@
-import { ref, Ref, reactive } from '@vue/composition-api'
+import { ref, Ref, reactive } from 'vue'
 
 export function usePaging () {
   const conditions = reactive({

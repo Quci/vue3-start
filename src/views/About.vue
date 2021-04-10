@@ -13,7 +13,6 @@ export default {
     setup() {
         const {data, el, count, handleClick} = useLogic()
 
-
         return {
             data,
             el,

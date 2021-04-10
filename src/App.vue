@@ -2,7 +2,8 @@
   <div id="nav">
     <router-link to="/">Home</router-link>&nbsp;&nbsp;|&nbsp;&nbsp;
     <router-link to="/about">About</router-link>&nbsp;&nbsp;|&nbsp;&nbsp;
-    <router-link :to="{name: 'CustomRef'}">CustomRef</router-link>
+    <router-link :to="{name: 'custom-ref'}">CustomRef</router-link>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <router-link :to="{name: 'table-select-demo'}">table-select-demo</router-link>
   </div>
   <router-view/>
 </template>
