@@ -8,7 +8,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import useTableSelect from '@/hooks/use-table-select'
 import {ref, toRefs, reactive} from 'vue'
 

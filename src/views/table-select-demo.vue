@@ -10,7 +10,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import {reactive} from 'vue'
 import tableSelectBd from '@/components/table-select-bd'
 
