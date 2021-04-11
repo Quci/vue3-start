@@ -4,7 +4,12 @@ interface Data {
     [key: string]: unknown
 }
 
-export default function useTableSelect(props: Data, context: SetupContext) {
+interface UseTableSelect {
+    visibleComputed: Object,
+    close: () => void
+}
+
+export default function useTableSelect(props: Data, context: SetupContext) : UseTableSelect{
     const {emit} = context
     const visibleComputed = computed({
         get: () => props.visible,
@@ -14,6 +19,7 @@ export default function useTableSelect(props: Data, context: SetupContext) {
     })
     const close = () => {
         visibleComputed.value = !visibleComputed.value
+        return 123
     }
 
     return {
